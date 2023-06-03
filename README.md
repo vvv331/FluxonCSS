@@ -3,6 +3,11 @@
 > 
 This is your average CSS you can think of. It's been build as motivational project after older generation CSS, with goal of keeping simplicity and style.
 
+**`Q:`** how do i use this css!!!!!
+
+**`A:`** Simply place `main_custom.css` into `{ResSwapLoc}/css` and you're ready to go!
+(if you use krunker on browser, you might need to download resource swapper extension)
+
 ## **This CSS Features:**
 - A nice retouch to UI
   - Simplistic, but modern and stylish UI makes it look pretty to the eyes.
