@@ -1,0 +1,1429 @@
+/* This here contains source code of the CSS. It is meant to be used with @import keyword or main_custom.css . To find CSS with :root code block and source, check out rootsource.css. */
+* {
+    font-family: 'Roboto Mono'
+}
+
+/* ----- OTHER ----- */
+
+		#mLevelCont, #menuAccountUsername, #menuKRCount, #menuServerInfoContainer {
+			text-shadow:-2px -2px 0px black,2px -2px 0px black,2px 2px 0px black,-2px 2px 0px black, 0 0 5px rgba(0,0,0,1);
+		}
+
+	/* CHAT */
+
+		#chatList {
+			padding-bottom:5px;
+			padding-top:5px;
+			width:340px;
+			border-radius: 10px;
+		}
+
+		.chatItem { /*message*/
+			background-color:unset;
+			border-radius:unset;
+			font-size:16px;
+			margin:3px 0 1px 5px;
+			border-top: solid 1px rgb(255 255 255 / 20%);
+			min-width:330px;
+			max-width:330px;
+		}
+
+		#bottomLeftHolder [style="display:inline-block;vertical-align:bottom"] {
+			height:40px;
+		}
+
+		#chatInput {
+			border-radius:max(0px, calc(var(--border-radius) - 11px));
+		}
+
+		#chatHolder {
+			width:350px;
+		}
+
+		#voiceDisplay {
+			margin-left:20px;
+			width:120px;
+			height:62px;
+		}
+
+		#chatList, #chatInputHolder, #voiceDisplay {
+			background-color:var(--70o-primary-color);
+			border: solid var(--border-thickness) var(--70o-border-color);
+			border-radius: var(--border-radius);
+			box-shadow: var(--ingame-box-shadow);
+		}
+
+
+	/* FPS DISPLAY */
+		#fpsDisplay {
+			text-shadow: 0 2px 3px black, 0 2px 5px black;
+		}
+
+
+/* ----- MAIN MENU ----- */
+
+	#menuClassNameTag, .selectorIcon, .rankClck {
+  display:none;
+}
+
+
+
+
+
+#windowHolder {z-index:34!important}
+
+/* CUSTOMIZE BUTTON */
+#customizeButton {
+    background-color:unset!important;
+    box-shadow:unset!important;
+    border:unset!important;
+    text-shadow:-2px -2px 2px black,2px -2px 2px black,2px 2px 2px black,-2px 2px 2px black, 0 5px 8px black !important;
+    height:70px;
+    width:100%;
+    text-align:center;
+    font-size:50px!important;
+	left:unset;
+	margin:unset;
+	padding: 15px 0 15px
+}
+
+#menuClassIcn { /* MENU CLASS ICON */
+	display: none;
+}
+
+#mapInfoHld { /* MAP INFORMATION */
+	position:absolute!important;
+	transform:translate(-30px,228%);
+	border:unset;
+	text-shadow: 0 2px 5px black, 0 2px 8px black;
+	width:500px;
+	text-align:left;
+	left:0px;
+}
+
+
+
+#policeButton {
+  border-color:rgba(66,99,200)!important;
+  width:60px!important;
+  height:40px!important;
+  position:absolute;
+  z-index:3;
+}
+
+
+
+
+	/* TOP LEFT HEADER */
+
+			.headerBarLeft {
+				border-bottom-right-radius: var(--border-radius);
+				background-color: var(--70o-primary-color);
+				border-bottom: solid var(--border-thickness) var(--70o-border-color);
+				border-right: solid var(--border-thickness) var(--70o-border-color);
+			}
+
+		/* SIGNED IN HEADER */
+
+			#signedInHeaderBar { /* shows up when youre signed up */
+				height:85px;
+				width:auto;
+				border-bottom-right-radius:30px!important;
+			  background-color:
+			}
+
+			#signedInHeaderBar .verticalSeparator {
+				margin:5px;
+				margin-top:20px;
+				height:30px!important;
+			}
+
+			#mLevelCont {
+				background-color:rgba(0,0,0,0);
+				width:auto;
+				height:76px;
+				right:unset;
+				left:0%!important;
+				margin-left:22px;
+				padding-left:0px;
+			}
+			
+			#mLevelContV {
+				font-size:40px;
+			}
+
+			#mLevelContV:before {
+				content:"LV ";
+			}
+
+			#menuUsernameContainer {
+				font-size:25px;
+				padding-right:7px;
+				position:relative;
+			}
+
+			#menuAccountUsername {
+				transform:translate(0%,-60%);
+				bottom:unset;
+			}
+
+
+
+
+			#menuLvlHold {
+				position:fixed;
+				left:100px;
+				width:270px;
+				top:65px;
+			}
+
+			.krInfo {
+				font-size:20px;
+				padding-right:10px;
+			}
+
+	.progressBar {
+		width:95%;
+	}
+
+	.progressBarInner {
+		background:unset;
+		background-color:#fff;
+	}
+
+
+	#endTabbedView {
+		background-color:unset;
+		border-radius:unset;
+	}
+	.endCard {
+		background-color:rgb(16 16 16 / 41%);
+		border-radius:unset;
+	}
+
+	#endTable {
+		background-color:rgba(26,26,26,1);
+		border-radius:unset;
+	}
+
+	.grey {
+		color:rgba(255,255,255,0.75);
+	}
+	.mapByTxt {
+		color:rgba(255,255,255,0.5);
+	}
+
+	/* MENU > PLAYER LIST */
+	#playerSearchH {
+		width:100%;
+		padding-left:27px;
+		background-color:rgba(0,0,0,0.5)!important;
+		border: none!important;
+	}
+
+
+	.skinList {
+	  width:830px;
+	}
+
+
+	#customizeContainer {
+		width:85%;
+	}
+
+	/* Map Hosting */
+	.hostMap {
+		width: 23%;
+	}
+
+	/* Server Types */
+	#menuWindow > .serverHostOp {
+		height:calc(306px - var(--border-thickness) * 2);
+		line-height:306px;
+		width:calc(32% - var(--border-thickness) * 2);
+	}
+
+	#menuWindow .serverHostOp {
+		background-image:unset!important;
+		background-color:var(--secondary-color);
+		border:solid var(--border-thickness) var(--border-sec-color);
+		border-radius:7px;
+	}
+	.serverHostOpH {
+		color:rgb(255,255,255);
+	}
+
+
+
+	#faceItIconM {
+		display:none;
+	}
+
+	#loadingBg {
+		background-image:var(--loading-bg);
+		filter:var(--load-bg-filters);
+		z-index:1;
+	}
+
+	#instructionHolder {
+		background-color:rgba(0,0,0,0.25)
+	}
+
+	#gameMessage {
+	  top:120px;
+	  text-shadow: -1px -1px 2px black, -1px 1px 2px black, 1px -1px 2px black, 1px 1px 2px black;
+	}
+
+	#instructionsUpdate {
+	  background-color:rgba(0,0,0,0.6);
+	  box-shadow: 0 0 15px 6px black;
+	}
+	#instructionsUpdate [style="color: rgba(255, 255, 255, 0.6);margin-top: 5px;"] {
+	  color: rgba(255,255,255,1)!important;
+	  text-shadow:0 0 3px white,0 0 6px #b3b3b3,0 0 9px #777777,0 0 14px black;
+	  border-bottom:solid 2px white!important;
+	}
+
+	#instructionsUpdate [style="margin-top:10px;font-size:15px;color:rgba(255,255,255,0.4)"] {
+	  display:none;
+	}
+
+	#instructionsUpdate [style="color: rgba(255, 255, 255, 0.6);font-size: 20px;margin-bottom: 13px;margin-top: 10px;"] {
+	  font-size:30px!important;
+	}
+
+	#instructionsUpdate a {
+	  color:rgba(149,162,255)!important;
+	}
+
+	#instructionsUpdate [style="color: rgba(255, 255, 255, 0.6);font-size: 20px;margin-bottom: 13px;margin-top: 10px;"] [href="https://www.twitch.tv/directory/game/Krunker"], #instructionsUpdate [onclick="showWindow(35)"] {
+	  display:none!important;
+	}
+
+	#instructionsUpdate [style="color: rgba(255, 255, 255, 0.6);font-size: 20px;margin-bottom: 13px;margin-top: 10px;"] {
+	  color:rgba(0,0,0,0)!important
+	}
+
+	#menuMiniProfilePic {
+		width:75px;
+		height:75px;
+	}
+
+
+
+	.setSugBox2 {
+	  height:100px;
+	  line-height:100px;
+	}
+
+	/* LOADING SCREEN */
+		#initLoader div:nth-child(1) {
+			display:none;
+		}
+
+		#initLoader {
+			/*background-image: var(--loading-bg);*/
+			background-color:unset;
+			background-size: 100%;
+			background-position:0;
+		}
+
+		#initLoader #loadHeader {
+			content: var(--loading-logo)
+		}
+
+		#loadTipsHolder {
+			font-size:0px;
+			width:600px;
+			background-color:rgba(0,0,0,0.2);
+			border-radius:10px;
+		}
+		#loadTipsHolder span {
+			display:none
+		}
+		#loadTipsHolder::after {
+			content:var(--loading-content);
+			font-size:30px;
+			letter-spacing:-1px;
+			text-shadow:-2px -2px 1px black,2px -2px 1px black,-2px 2px 1px black,2px 2px 1px black
+		}
+
+
+
+	.bigMenTab { /*big menu tab */
+	  font-size:27px!important;
+	}
+
+	#gameNameHolder { /*remove top logo*/
+		display:none!important;
+	}
+
+	/* Watermark, remove it if you feel like so. */
+	#menuRegionLabel::after {
+		content:var(--watermark-text);
+		opacity:0.25;
+		position:fixed;
+		left:35px;
+		top:100px;
+	}
+
+	/* hide stream container, we dont need to see streamers anyway */
+		#streamContainer {
+			display:none
+		}
+
+	/* MENU WINDOW */
+
+		#windowHolder.popupWin {
+			background-color: rgba(0,0,0,0.3);
+			backdrop-filter: blur(6px);
+			transition: backdrop-filter 0.3s cubic-bezier(.48,0,.54,1), background-color 0.3s cubic-bezier(.48,0,.54,1);
+		}
+
+		/* this weird as hell CSS selector is to NOT display the menu content FORCEFULLY when ingame. */
+		#uiBase.onMenu > #fullMenHider > #menuWindowHider > #windowHolder.popupWin[style="display: none;"] {
+			background-color: rgba(0,0,0,0);
+			display: block!important;
+			visibility: collapse;
+			backdrop-filter: blur(0px);
+			transition: all 0.3s cubic-bezier(.48,0,.54,1);
+		}
+
+		#windowHolder.popupWin[style="display: block;"] > #windowCHolder {
+			transition: transform 0.15s cubic-bezier(.25,.49,.64,1);
+			transform:translateY(0);
+
+		}
+
+		#windowHolder.popupWin[style="display: none;"] > #windowCHolder {
+			transition: transform 0.3s cubic-bezier(.5,-0.01,.5,1), filter 0.3s cubic-bezier(.5,-0.01,.5,1);
+			filter: opacity(0);
+			transform:translateY(5%);
+		}
+
+		#menuWindowHider {
+			z-index:100!important;
+		}
+
+		#menuWindow.dark { /*for style, give it box shadow */
+			box-shadow:0 5px 40px 3px #000;
+		}
+
+		#menuWindow {
+			background-color:var(--primary-color)!important;
+			border:solid var(--border-thickness) var(--border-color);
+			border-radius: var(--border-radius);
+			z-index:139233!important;
+			transition: transform 0.3s cubic-bezier(.5,-0.01,.5,1);
+		}
+		#menuWindow [style="color:rgba(0,0,0,0.3);margin-top:-5px;margin-bottom:10px"] {
+			display:none!important;
+		}
+
+
+	/* SETTINGS */
+
+		#menuWindow > div.settingsHeader { /* settings header */
+			background-color:var(--secondary-color);
+			padding-right:20px;
+			padding-bottom:5px;
+				width:100%;
+		}
+
+
+		/* Setting Label */
+		.settName, .settNameSmall {
+			color:rgba(255,255,255,1);
+			text-shadow: 0 0 19px #000;
+			padding-bottom:7px;
+			padding-top:0;
+		}
+
+		/* Collapsable category of settings */
+
+		.setHed, .setHed .material-icons {
+			color:rgba(215,215,215,0.75);
+		}
+		.setHed {
+			background-color:var(--tertiary-color);
+			border: unset;
+			border-radius:6px;
+			height:35px;
+			padding-top:2px;
+		}
+
+		/*setting tab */
+
+		.settingTab { 
+			background-color:var(--tertiary-color);
+			color:rgba(255,255,255,1);
+		}
+		.settingTab.tabANew {
+			background-color:var(--primary-color);
+			border-color:rgba(255,255,255,1)
+		}
+		.settingTab:hover {
+			 background-color:var(--primary-color);
+			border-color:rgba(255,255,255,1)
+		}
+		.settingTab:active {
+			background-color:var(--primary-color);
+			border-color:rgba(255,255,255,1)
+		}
+
+		.advancedSwitch {
+			width:100px;
+			height:30px;
+		}
+
+		input:checked + .advancedSlider {
+			background-color:rgb(255 255 255 / 20%);
+		}
+
+		.advancedSlider {
+			background-color:rgba(0, 0, 0, .2);
+		}
+
+		.advancedSlider::before {
+			display:none;
+		}
+
+	/*-----------*/
+
+
+	/* SUB-LOGO BUTTONS */
+
+		#menuBtnHost, #menuBtnBrowser, #menuBtnJoin, #inviteButton { /*resize all font to 0px so they are not seen */
+			font-size:0px!important;
+			font-family:M-Iout;
+		}
+		#menuBtnHost::after {
+			content:"gite";
+			font-size:40px!important;
+			opacity:1;
+		}
+		#menuBtnBrowser::after {
+			content:"dns";
+			font-size:40px!important;
+			opacity:1;
+		}
+		#menuBtnJoin::after {
+			content:"link";
+			font-size:40px!important;
+			opacity:1;
+		}
+		#inviteButton::after {
+			content:"share";
+			font-size:40px!important;
+			opacity:1;
+		}
+
+		#subLogoButtons {
+			border-top:solid 4px white;
+			border-image:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%) 1;
+			padding-top:20px;
+			padding-left:110px;
+			padding-right:110px;
+			bottom: 100px;
+			z-index:2;
+		}
+		#subLogoButtons .button.small {
+			background-color:unset!important;
+			box-shadow:unset!important;
+			border:unset!important;
+			padding: 4px 20px 4px 12px !important;
+			margin-left:0px;
+			margin-right:0px;
+			transition:unset;
+		}
+		#subLogoButtons .button.small[onclick="showWindow(27)"] {
+			font-size:0px!important;
+		}
+		#subLogoButtons .button:hover {
+			transform:translate(0,6%)!important;
+		}
+
+	/* CUSTOM GAME HOSTING */
+
+		.hostOpt {
+			background-color:unset;
+			border:unset;
+			width:161px;
+
+		}
+		.optCheck { /*basically bg for them */
+			background-color: var(--secondary-color);
+			border:3px solid var(--border-color);
+		}
+		.optName {
+			text-rendering: var(--text-optimization);
+		}
+		input:hover+.optCheck {
+			background-color:var(--2nd-light-color);
+		}
+		input:checked+.optCheck {
+			background-color:var(--4th-light-color);
+		}
+
+	/* PLAYER CLASS AND CUSTOMIZATION TAB */
+		#menuClassName, #menuClassSubtext {
+			text-shadow: 0 4px 5px black;
+		}
+
+		#classPreviewCanvas {
+			height:500px!important;
+			width:100%!important;
+			left:0;
+			margin-right:-40px;
+			right:unset;
+		}
+		#menuClassContainer {
+			left:50%;
+			right:unset;
+			bottom:27%;
+			top:unset;
+			transform:translate(-50%,0) scale(0.75);
+			z-index:3!important;
+
+			background-color:var(--70o-tertiary-color);
+			border: solid var(--border-thickness) var(--70o-border-sec-color);
+			border-radius:var(--border-radius);
+
+			height: 580px;
+		}
+
+		#menuClassContainer > div:nth-child(5) { /* Center gun skin name and gun name */
+			width:100%;
+			text-align:center;
+		}
+
+		/* CLASS SELECTION CONTAINER */
+
+			#selectorContainer {
+				background-color: var(--primary-color);
+				border-bottom: solid 3px rgb(0 0 0 / 60%);
+				height:50px;
+			}
+			.selectorItem { /*categories like class, loadout, customization and other*/
+				width:85%;
+				background-color:var(--tertiary-color);
+				border-radius:unset;
+				border:solid 1px rgb(0 0 0 / 75%);
+				height:60px;
+			}
+
+			.selectorItem .selectorLabel {
+			  bottom:50%;
+			  transform:translate(0,50%)
+			}
+			.selectorItem:hover {
+				background-color:var(--1st-light-color);
+			}
+			.selectedItem {
+				background-color:var(--primary-color);
+				border:solid 1px rgb(0 0 0 / 75%)!important;
+			}
+
+			/* CUSTOMIZATION TAB */
+				.custContainer[style="width: 47.5%;height: 163px;"] {
+					width:46.7%!important;
+				}
+
+				.custContainer[style="width: 30.7%;height: 163px;"] {
+					width:29.8%!important;
+				}
+				.custContainer {
+					background-color:var(--secondary-color);
+					border:solid 6px var(--border-color);
+				}
+
+				#customizeContainer {
+					width: 100%!important;
+				}
+
+			/* CLASS CARD */
+
+				.classCard { /* card itself */
+					background-color:var(--secondary-color);
+					border:solid 3px var(--border-color);
+					box-shadow:unset;
+					border-radius: 10px;
+					width:20%;
+					height:70px;
+					margin-right:7px;
+					margin-bottom:10px;
+				}
+				.classImgC { /* icon */
+					width:60px; left:28%;
+				}
+
+				.classLvl { /* level */
+					top:54%;
+					left:37%;
+					color:white!important;
+				}
+				.classXPBar { /* xp bar */
+					transform:translateX(-50%);
+					bottom:2%;
+					left:50%;
+					width:165px;
+					height:11px;
+					background-color:rgba(22,22,22,0.4);
+					border:solid 1px white;
+					border-radius: 3px;
+				}
+				.clsXPBarC {
+					height:6px;
+					margin-top:3px;
+					background-color:rgb(255,255,255);
+				}
+				.clsXPBarV {
+				  line-height: 10px;
+				}
+
+				.className {
+					font-size:15px;
+				}
+
+				.className, .classWeap {
+				  left: 37%;
+				}
+
+				.classWeap {
+				  top: 28%;
+				}
+
+
+	/* LEFT MENU TAB */
+		#menuItemContainer {
+			bottom:210px;
+			top:unset;
+			left:50%;
+			width:auto;
+			flex-direction: row;
+			transform:translate(-50%,70%);
+
+			background-color:var(--70o-tertiary-color);
+			border: solid var(--border-thickness) var(--70o-border-sec-color);
+			border-radius:var(--border-radius);
+
+			padding: 20px 20px 110px 20px;
+			z-index: 1;
+		}
+		#seasonLabel, .menuItemIcon, #termsInfo div {
+			display:none
+		}
+
+		.menuItem {
+			display:block;
+			background-color:unset;
+			margin-right:20px;
+			border-right:solid 4px;
+			padding-right:20px;
+		}
+		.menuItem span {
+		  display:none!important;
+		}
+
+
+		#menuItemContainer div.menuItem[onclick='playSelect(),logBtnFRVR("settings"),showWindow(1)'] {
+			border-right:unset!important;
+			margin-right:unset;
+		}
+
+		#menuItemContainer div.menuItem[onclick='playSelect(),logBtnFRVR("esports"),showWindow(49)'] {
+			display:none;
+		}
+
+		.menuItemTitle { /*menu button*/
+			margin-top:unset!important;
+			text-align:center;
+		}
+
+		.menuItem:hover .menuItemTitle {
+			transform:translate(0,10%);
+		}
+		.menuItem:hover {
+			border-left:unset;
+		}
+
+		#menuBtnProfile, #menuBtnShop, #menuBtnChall, #menuBtnSocial, #menuBtnMaps, #menuBtnMods, #menuBtnSettings {
+			font-size:0px!important;
+			font-family:M-Iout;
+		}
+
+		#menuItemContainer > div > div.menuItemTitle::after { /* changed code here to DRY code */
+			font-size:40px;
+			opacity:1;
+		}
+
+		#menuBtnProfile::after { /* profile */
+			content:"account_circle";
+		}
+		#menuBtnShop::after { /* shop */
+			content:"shopping_cart";
+		}
+		#menuBtnChall::after { /* challenges */
+			content:"flag";
+		}
+		#menuBtnSocial::after { /* social */
+			content:"home";
+		}
+		#menuBtnMaps::after { /* maps */
+			content:"videogame_asset";
+		}
+		#menuBtnMods::after { /* mods */
+			content:"extension";
+		}
+		#menuBtnSettings::after { /* settings */
+			content:"settings";
+		}
+
+	#instructions { /* the "CLICK TO PLAY" */
+		top:10%;
+	}
+
+	/* SPECTATE BUTTON */
+
+		#uiBase.onMenu #spectButton {
+			bottom:280px;
+			top:unset;
+		}
+		#uiBase.onMenu #spectButton [style="font-size:15px;color:rgba(255,255,255,.6)"] {
+			display:none;
+		}
+		#uiBase.onMenu #spectButton::before {
+			font-family:M-Iout;
+			content:"visibility";
+			color:rgba(255,255,255,1);
+			font-size:30px;
+		}
+
+	/* removes UI clutter in the menu */
+	#tlInfHold, #newsHolder, #aHolder, .imageButton, #editorBtnM, .krSocial, #rankedSoonTm {
+    	display:none!important;
+	}
+
+	/* MOD/MAP MENU */
+		#modList > div[style="display:inline-block;"], #searchResultsMO > div[style="display:inline-block;"], #mapList > div[style="display:inline-block;"] { /* make tabs smaller, its much better to look at mod list that has smaller tabs. */
+			width:23%;
+			padding-right:calc(34px - var(--border-thickness));
+			height:220px;
+			padding-bottom:29px;
+		}
+.mapListThumb {
+	border-radius: calc(var(--border-thickness) - 5px);
+}
+		.mapListItem { /*the style of the UI itself */
+			background-color:var(--2nd-light-color);
+			width:100%;
+			height:100%;
+			padding:5px;
+			border-radius:var(--border-radius)!important;
+			border: var(--border-thickness) solid var(--border-color)!important;
+		}
+		.mapListItem > div[style="height:200px;width:100%;overflow: hidden;"] {
+			height: calc(100% - 39px)!important;
+		}
+
+	/* PRIZE WHEEL SHOP SECTION */
+		.prizeWheelTable .shopCard {
+		  width:30%!important;
+		  height:80px!important;
+		}
+
+		.prizeWheelTable .shopCard .shopImg {
+		  display:none;
+		}
+		.prizeWheelTable .shopCard .spinValH {
+		  width:100%;
+		  height:80%;
+		  bottom:0%;
+		  top:unset;
+		}
+		.prizeWheelTable .shopCard .spinValL {
+		  width:100%!important;
+		  height:50%;
+		}
+
+	/* --------------CHALLENGES------------ */
+
+		  /* Types */
+
+		.challHeadrI {
+			background-image:unset!important;
+			height:100px;
+			border-radius:11px;
+			border:unset;
+		}
+
+		.challHeadrI .challHeadrBck {
+		  left:50%;
+		  top:10%;
+		  transform:translate(-50%,0);
+		}
+
+		/* cant complete in customs */
+		#menuWindow > div.challHeadrBlck {
+		  font-size:0px!important;
+		  height:100px;
+		  line-height:100px;
+		  margin-left:1px;
+		  width:calc(100% - 50px);
+		  top:21px;
+		  border-radius:unset;
+		}
+
+
+
+		/* Card messages */
+		.challCrdMsg {
+		  height:25px;
+		  line-height:25px;
+		}
+
+		/* Challenge progresssion card */
+		.chalCard {
+			height:60px;
+			background-color: var(--secondary-color);
+			border: 3px solid var(--border-sec-color);
+			border-radius:3px;
+		}
+
+		  /* WEAPON / MAP CARDS */
+
+			/* Map */
+			.challMapCrd {
+				height:50px;
+				background-color: var(--secondary-color);
+				border: 3px solid var(--border-sec-color);
+				border-radius:5px;
+			}
+			/* Weapon / Map name */
+			.challMapCrd .challMapName {
+			  left:5%;
+			  transform:translate(0,-50%);
+			}
+
+		/* Icons */
+		.chalCard .chalImgC, .chalCard .challComplB {
+		  height:55px;
+		  width:55px;
+		  border-radius:3px;
+		  border: 3px solid var(--border-sec-color)
+		}
+
+		.chalCard .challComplB {
+		  left:15px;
+		  top:15px;
+		}
+		.chalCard .challComplB .material-icons {
+		  font-size:50px!important;
+		}
+		/* XP bar and challenge name */
+		.chalCard .chalRight {
+		  margin-top:0px;
+		  top:-10%;
+		}
+		.chalCard .chalXPBar .chalXPVal {
+		  font-size:12px;
+		  line-height:20px;
+		}
+		.chalCard .chalXPBar {
+		  margin-top:4px;
+		  height:20px;
+		}
+
+		/* Rewards section */
+		.chalRews {
+		  width:260px;
+		  height:65px;
+		  margin-bottom:10px;
+		}
+
+		.chalRews .chalRewV {
+		  font-size:13px;
+		  width:100%;
+		  height:15px;
+		  float:right;
+		}
+		.chalRews > div:nth-child(3) {
+		  width:170px;
+		  margin-top:0px;
+		  transform:translate(0,-26%)
+		}
+		.chalRews .chalRewV .material-icons {
+		  font-size:17px!important
+		}
+
+		.chalRews .chalRewSkn {
+		  height:40px;
+		  width:40px;
+		  margin-left:10px;
+		}
+
+
+		#menuWindow > div.challHeadrBlck::after {
+		  font-size:33px;
+		  content:"lol leave customs before doing these."
+		}
+
+/* ------------- */
+
+
+
+#headerRight {
+    background-color:var(--70o-primary-color);
+    border-bottom: solid var(--border-thickness) var(--70o-border-color);
+    border-left: solid var(--border-thickness) var(--70o-border-color);
+	border-bottom-left-radius: 13px;
+}
+
+
+
+/*#menuBtnRanked::after {
+    font-size:30px!important;
+    content:"Comp"
+}*/
+
+.floatR {
+    color:rgba(215,215,215,1);
+    text-shadow: 0 0 9px black;
+}
+.floatR span {
+    color:rgba(185,185,185,1)!important;
+    text-shadow: 0 0 9px black;
+}
+
+.menuTabNew {
+    color:rgba(255,255,255,0.75);
+}
+.menuTabNew[onclick="windows[4].switchTab(1)"] {
+    display:none;
+}
+
+.settingsBtn, .hostPresetBtn {
+    background-color: var(--quadrary-color);
+    border-radius:5px;
+	height:19px;
+	font-size:17px;
+	line-height: 17px;
+}
+
+
+
+
+
+
+
+/* HTML ELEMENTS */
+
+	/* Input values */
+		.inputGrey2, input[type="text"], input[type="password"], #settSearch, #plySearch {
+			background-color:var(--quadrary-color);
+			color:rgba(255,255,255,1);
+			padding-bottom:4px;
+			padding-top:4px;
+		}
+
+		.inputGrey2 option {
+			color:rgb(255,255,255);
+			text-shadow:-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+		}
+
+	/* TOGGLE SWITCH */
+
+		/* BG */
+		.slider {
+			border-radius:     6px;
+			background-color:  rgb(0 0 0 / 0.6);
+			border:            unset;
+			width:             71px;
+			height:            31px;
+			top:               -5px;
+		}
+
+		/* BG Active */
+		input:checked+.slider {
+			background-color:rgb(0 0 0 / 0.5);
+		}
+
+
+		/* switch active indicator (on/off switches) */
+		.slider:before {
+			border-radius:  4px;
+			top:            50%;
+			left:           50%;
+			transform:      translate(-110%,-50%) scale(1);
+			transition:     all 0.3s cubic-bezier(0.29, 0.01, 0, 0.96);
+			background-color:rgba(127, 127, 127, .78);
+			border:         unset;
+			height:         20px;
+			width: 			26px;
+		}
+
+		input:checked+.slider:before { /* switch is active */
+			background-color:rgba(255, 255, 255, .88);
+			transform:translate(0%,-50%);
+		}
+		input:checked+.slider:active:before {
+			transition:     all 0.1s cubic-bezier(0.29, 0.01, 0, 0.96);
+			width:  43px;
+			height: 17px;
+			transform:translate(calc(-17px),-50%);
+		}
+		.slider:active:before {
+			transition:     all 0.1s cubic-bezier(0.29, 0.01, 0, 0.96);
+			width:43px;
+			height: 17px;
+			transform:translate(calc(-110% + 17px),-50%);
+		}
+
+		.switch {
+			height:26px;
+			margin-bottom:2px;
+			width:68px;
+		}
+
+	/* Sliders */
+
+		.sliderVal { /*number that shows the value of the slider */
+			border-radius:5px;
+			border:2px solid #656565!important;
+			background-color:rgba(0, 0, 0, .5);
+			font-size:17px;
+			line-height:17px;
+			height:18px;
+		}
+		.sliderVal:hover {
+			border:2px solid #848484!important;
+		}
+
+		.sliderM { /* slider body */
+			border-radius:calc(50px - 3%);
+			background-color:rgba(0,0,0,0.3);
+			border:3px solid rgb(255 255 255 / 0.35);
+			height:7px;
+		}
+
+		.sliderM::-webkit-slider-thumb, .sliderM::-moz-range-thumb { /*thumb that you can drag */
+			background-color:white;
+			height:35px;
+			width:10px;
+			border: 2px solid gray;
+			transition: all 0.03s linear 0s;
+		}
+		.sliderM::-webkit-slider-thumb:hover .sliderM::-moz-range-thumb:hover {
+			background-color:rgba(255,255,255,1);
+			height:43px;
+		}
+		.sliderM::-webkit-slider-thumb:active, .sliderM::-moz-range-thumb:active {
+			background-color:rgba(255,255,255,1);
+			height:33px!important;
+		}
+
+		#forcedSettings > div > div.setHed { /*exceptional for custom game setup*/
+			padding-top:12px;
+		}
+
+/*------------IN-GAME UI------------*/
+
+	body > canvas[style^="display: block; width:"] {
+		image-rendering:var(--ingame-optimizations);
+	}
+
+	#reloadMsg { /* Message telling to reload */
+		bottom:35%;
+		height:50px;
+		width:auto;
+		line-height:45px;
+		background-color:var(--70o-primary-color);
+		border:solid var(--border-thickness) var(--70o-border-color);
+		border-radius: var(--border-radius)
+	}
+
+	/* WEAPON DISPLAY */
+		#weapDisplay { /*Weapon display*/
+			position:fixed;
+			display:flex!important;
+			flex-direction:row;
+			bottom:var(--ingame-weapon-display-padding);
+			right:50%;
+			transform:translateX(50%);
+
+
+		}
+		.weapItem {
+			display:flex!important;
+		}
+		.weapKey {
+			position:absolute;
+		}
+
+	#ammoDisplay, #healthValueHolder {
+		background-color:var(--70o-primary-color);
+		border-radius: var(--border-radius);
+		border: solid var(--border-thickness) var(--70o-border-color);
+		position:fixed;
+		bottom:var(--ingame-health-ammo-padding);
+		height:60px;
+		margin-bottom:unset;
+		padding:8px;
+		box-shadow: var(--ingame-box-shadow);
+	}
+
+	/* AMMO/HP VALUES */
+		#ammoMax, #maxHP {
+			font-size:40px;
+			word-spacing:-14px;
+			color:rgb(255 255 255 / 50%)
+		}
+
+		#healthValue, #ammoVal {
+			text-rendering: var(--text-optimization);
+			font-size: 56px;
+			margin-top:-10px;
+			margin-right:-16px;
+		}
+
+	/* AMMO DISPLAY */
+		#ammoDisplay {
+			left:calc(50% + 290px);
+			padding-right:4px;
+		}
+
+	/* HEALTH DISPLAY */
+		#healthValueHolder {
+			right:calc(50% + 250px);
+		}
+		#maxHP {
+			margin-left:-28px;
+		}
+		#challIcon {
+			margin-left:20px;
+			width:45px;
+			height:45px;
+		}
+		#healthBar {
+			display:none
+		}
+
+
+
+
+	#timerDisplay { /* TIMER DISPLAY */
+		bottom:				unset;
+		top: 				var(--ingame-timer-padding);
+		text-rendering: 	var(--text-optimization);
+		position:			fixed;
+		left:				50%;
+		transform:			translate(-50%,0);
+		padding:			2px 22px;
+		background-color:	var(--70o-primary-color);
+		border-radius:		var(--border-radius);
+		border: 			solid var(--border-thickness) var(--70o-border-color);
+		box-shadow: 		var(--ingame-box-shadow);
+		image-rendering:	pixelated;
+		color-rendering:	optimizeSpeed;
+	}
+
+	#timerVal {
+		font-size:65px;
+	}
+
+	/* leaderboard visuals */
+
+	#leaderDisplay, .countIcon { /* leaderboard and stat counts */
+		background-color:	var(--70o-primary-color);
+		border-radius: 		var(--border-radius);
+		border: 			solid var(--border-thickness) var(--70o-border-color);
+
+		box-shadow: 		var(--ingame-box-shadow);
+	}
+	.leaderNameM, .leaderName, .leaderNameF {
+	  text-shadow: 0 -1px 3px black, 0 -2px 5px black!important;
+	}
+
+	/* Leaderboard stats */
+	#killsVal, #deathsVal, #streakVal, #kdCount, #scoreCount {
+		font-size:35px;
+		text-rendering: var(--text-optimization);
+	}
+	#killsIcon,#deathsIcon,#streakIcon,#kdIcon,#scoreCount .material-icons,.endAHolder, #hudClassIcon, #timerIcon, #customizeButton .material-icons {
+		display:none!important;
+	}
+	#killsVal:before {
+		content:"K ";
+		color:var(--kill-count-clr);
+	}
+	#deathsVal:before {
+		content:"D ";
+		color:var(--death-count-clr);
+	}
+	#streakVal:before {
+		content:"S ";
+		color:var(--streak-count-clr);
+	}
+	#kdCount:before {
+		content:"KD ";
+		color:var(--kd-count-clr);
+	}
+	#scoreCount:before {
+		content:"Sc. ";
+		color:var(--score-count-clr);
+	}
+
+	/* MATCH END LEADERBOARD */
+		.endCard { /*the end card itself*/
+			background-color:var(--70o-primary-color);
+			border: solid var(--border-thickness) var(--70o-border-sec-color);
+			border-radius: var(--border-radius)
+		}
+		#endTable { /*list containing players and their stats*/
+			background-color:rgb(0 0 0 / 50%);
+			border-radius: max(0, calc(var(--border-radius) - 10px));
+		}
+
+		/* PLACE NUMBER COLORING */
+			#endTable > tbody > tr:nth-child(3) > td:first-child { /* TOP 1 */
+				color:rgb(255, 234, 119)!important;
+			}
+			#endTable > tbody > tr:nth-child(4) > td:first-child { /* TOP 2 */
+				color:rgb(230, 230, 230)!important;
+			}
+			#endTable > tbody > tr:nth-child(5) > td:first-child { /* TOP 3 */
+				color:rgb(186, 125, 78)!important;
+			}
+			#endTable > tbody > tr > td:first-child { /* the rest */
+				color:rgb(126, 126, 126)!important;
+			}
+
+/* FONTS */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_SeW4Ep0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_QOW4Ep0.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_R-W4Ep0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_S-W4Ep0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_SuW4Ep0.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_ROW4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* outlined material icons*/
+@font-face {
+  font-family: 'M-Iout';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v66/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Righteous';
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/righteous/v13/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Tilt Warp';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiltwarp/v5/AlZc_zVDs5XpmO7yn3w7flUoytXJp3z29uEwmEMLEJljLXvT8UJSZQB5C1b8GA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Tilt Warp';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiltwarp/v5/AlZc_zVDs5XpmO7yn3w7flUoytXJp3z29uEwmEMLEJljLXvT8UJSZQB4C1b8GA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Tilt Warp';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiltwarp/v5/AlZc_zVDs5XpmO7yn3w7flUoytXJp3z29uEwmEMLEJljLXvT8UJSZQB2C1Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*--------VT323--------*/
+
+/* vietnamese */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isQFJXGdg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isRFJXGdg.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isfFJU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
