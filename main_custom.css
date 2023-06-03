@@ -1,0 +1,72 @@
+/* If you need source code itself, check out rootsource.css or source.css . */
+
+@import url("https://vvv331.github.io/FluxonCSS/source.css"); /* import source code. */
+
+:root { /* This is where you configure everything about how your CSS works */
+
+
+	/* -------------Loading Screen------------- */
+		--loading-logo: url(https://i.imgur.com/brlSM3K.png);	/*default: url(https://i.imgur.com/brlSM3K.png) (krier)*/
+		--loading-bg: url(https://i.imgur.com/lYa1HJe.png); 	/* loading BG you'll have when loading*/
+		--load-bg-filters: brightness(1);						/* loading background filters, keep it as brightness(1) if you want it to be stock */
+		--loading-content:"Fluxon CSS by vvv331#4056. You can modify it's look in CSS :root block.";
+
+	/* -------------Watermark------------- */
+		--watermark-text:"FLUXON CSS @vvv331#4056"; /*default: "V3X CSS @vvv331"*/ /* Watermark is optional. But if you want to credit me, keep it as it is. */
+	/* -------------Colors------------- */
+
+		--primary-color-h: 0deg;
+		--primary-color-s: 0%;
+		--primary-color-l: 17%;
+
+		/* --------------Leaderboard------------- */
+			--kill-count-clr: 	rgb(255 137 203); 	/*default: rgb(255 137 203)*/
+			--death-count-clr: 	rgb(127 134 158); 	/*default: rgb(127 134 158)*/
+			--streak-count-clr: rgb(234 211 160); 	/*default: rgb(234 211 160)*/
+			--kd-count-clr: 	rgb(127 158 142); 	/*default: rgb(127 158 142)*/
+			--score-count-clr: 	rgb(255 250 88); 	/*default: rgb(255 250 88)*/
+
+
+	
+	/* -------------Ui Tweaks -------------*/
+		--ingame-health-ammo-padding: 			70px; 		/* default: 50px; how much to pad ammo/health display from the bottom. */
+		--ingame-weapon-display-padding: 		50px; 		/* default: 50px; how much to pad weapon display from the bottom */
+		--ingame-timer-padding: 				50px;		/* default: 50px; how much to pad timer display from the top */
+	
+		--border-radius: 20px; /* default: 20px; how rounded UI is */
+		--border-thickness: 6px; /* default: 6px; how thick UI borders are */
+		--ingame-box-shadow: 0 4px 20px 0 rgb(0 0 0 / 40%); /*default: 0 4px 10px 0 rgb(0 0 0 / 40%); defines visual appearance of shadows coming from UI ingame. set it to "unset" if you dont need such visual.
+	
+      
+  /* -------------Optimizations------------- */
+      /* WARNING: this is NOT guranteed it will significantely improve your performance or anything you do here will work. */
+	--text-optimization: optimizeSpeed; /*whenever the text should be optimized, set it to "optimizeSpeed" to optimize performance, otherwise, set it to "auto"*/
+	--ingame-optimizations: auto; /* set this to "pixelated" for pixelated image in game, otherwise, set it to "auto" */
+	
+	
+	/* ---------Color Initialization----------- */
+		/* Constructs colors based on what primary color accent you've chosen. 	*/
+		/* Change this only if you know what are you doing 						*/
+
+		--primary-color: 		hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+		--secondary-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.85 - 1%));
+		--tertiary-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.66 - 2%));
+		--quadrary-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.55 - 3%));
+
+		--1st-light-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 1.1));
+		--2nd-light-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 1.22));
+		--3rd-light-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 1.4));
+		--4th-light-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 1.6));
+
+
+		--border-color: 		hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.75 - 2%));
+		--border-sec-color: 	hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.68 - 3%));
+
+
+		--70o-primary-color: 	hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l), 0.7);
+		--70o-tertiary-color: 	hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.66 - 2%), 0.7);
+
+		--70o-border-color: 	hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.75 - 2%), 0.7);
+		--70o-border-sec-color: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) * 0.6 - 3%), 0.7);
+    
+}
