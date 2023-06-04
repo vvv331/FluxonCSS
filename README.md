@@ -21,6 +21,8 @@ This is your average CSS you can think of. It's been build as motivational proje
   - The CSS Contains `:root` code block that has many things to configure. Everyone may find their own configuration.
 - Resolution support
   - *"if ur css depends on resolution you did it wrong" ~LukeTheDuke#7313.* Despite FHD resolution (1080p) being most commonly used, there are players and users who don't use FHD monitors. This CSS doesn't have any potential problems with resolutions and can be easily used on most *(if not, all)* monitors.
+- Always up to date
+  - The CSS imports sourcecode from github pages, so if any changes happen to `source.css`, they'll be reflected to your CSS.
 - UI Scale?
   - Recommended UI Scale is <0.8. Anything above that *may* cause UI Overlapping.
 - Pull requests? Sure.
