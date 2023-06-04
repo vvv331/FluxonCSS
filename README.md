@@ -1,4 +1,4 @@
-# Krunker Fluxon CSS
+# Krunker Influx CSS
 > A css built specifically for simplicity, style and clutter removal.
 > 
 This is your average CSS you can think of. It's been build as motivational project after older generation CSS, with goal of keeping simplicity and style.
