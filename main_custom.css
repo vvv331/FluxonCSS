@@ -1,6 +1,6 @@
 /* If you need source code itself, check out rootsource.css or source.css . */
 
-@import url("https://vvv331.github.io/FluxonCSS/source.css"); /* import source code. */
+@import url("https://vvv331.github.io/InfluxCSS/source.css"); /* import source code. */
 
 :root { /* This is where you configure everything about how your CSS works */
 
@@ -9,10 +9,10 @@
 		--loading-logo: url(https://i.imgur.com/brlSM3K.png);	/*default: url(https://i.imgur.com/brlSM3K.png) (krier)*/
 		--loading-bg: url(https://i.imgur.com/lYa1HJe.png); 	/* loading BG you'll have when loading*/
 		--load-bg-filters: brightness(1);						/* loading background filters, keep it as brightness(1) if you want it to be stock */
-		--loading-content:"Fluxon CSS by vvv331#4056. You can modify it's look in CSS :root block.";
+		--loading-content:"Influx CSS by vvv331#4056. You can modify it's look in CSS :root block.";
 
 	/* -------------Watermark------------- */
-		--watermark-text:"FLUXON CSS @vvv331#4056"; /*default: "V3X CSS @vvv331"*/ /* Watermark is optional. But if you want to credit me, keep it as it is. */
+		--watermark-text:"Influx CSS @vvv331#4056"; /*default: "Influx CSS @vvv331#4056"*/ /* Watermark is optional. But if you want to credit me, keep it as it is. */
 	/* -------------Colors------------- */
 
 		--primary-color-h: 0deg;
