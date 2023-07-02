@@ -1,3 +1,4 @@
+## Important note: Influx CSS is currently broken since the recent UI update. This might take a while to fix.
 # Krunker Influx CSS
 > A css built specifically for simplicity, style and clutter removal.
 > 
