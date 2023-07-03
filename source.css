@@ -1,4 +1,4 @@
-/* dont use this for productive work, it is here as a temporary replacement. when css is fixed, ill put it back to intended */
+/* this is loaded via main_custom.css */
 * {
     font-family: 'Roboto Mono'
 }
@@ -10,6 +10,14 @@
 		}
 
 	/* CHAT */
+
+		#chatInputHolder > div.greyInlineInner {
+			background-color:unset;
+		}
+
+		#chatInputHolder {
+			width:450px;
+		}
 
 		#chatList {
 			padding-bottom:5px;
@@ -360,14 +368,11 @@
 
 	/* Watermark, remove it if you feel like so. */
 	#menuRegionLabel::after {
-		content:"IMPORTANT NOTE: Influx CSS ingame has been temporaily disabled due to krunker's UI Update. When the issue will be fixed, it'll come back on. For now, your ingame CSS is defaulted.";
-		text-align:justify;
-		width:650px;
-		opacity:0.65;
+		content:var(--watermark-text);
+		opacity:0.25;
 		position:fixed;
 		left:35px;
 		top:100px;
-		font-size:20px;
 	}
 
 	/* hide stream container, we dont need to see streamers anyway */
@@ -1130,12 +1135,14 @@
 		}
 
 /*------------IN-GAME UI------------*/
-/*
+
+/* way to go krunker. had the audacity to break the entirety of ingame css */
+
 	body > canvas[style^="display: block; width:"] {
 		image-rendering:var(--ingame-optimizations);
 	}
 
-	#reloadMsg {
+	#reloadMsg { /* Message telling to reload */
 		bottom:35%;
 		height:50px;
 		width:auto;
@@ -1145,74 +1152,88 @@
 		border-radius: var(--border-radius)
 	}
 
-		#weapDisplay {
+	/* WEAPON DISPLAY */
+		#weapHolder { /*Weapon display*/
 			position:fixed;
 			display:flex!important;
 			flex-direction:row;
 			bottom:var(--ingame-weapon-display-padding);
 			right:50%;
 			transform:translateX(50%);
-
-
-		}
-		.weapItem {
-			display:flex!important;
-		}
-		.weapKey {
-			position:absolute;
 		}
 
-	#ammoDisplay, #healthValueHolder {
+	#ammoHolder, #bottomLeftPlayerRight {
+		position:fixed;
+		bottom:var(--ingame-health-ammo-padding);
+		margin:unset;
+		padding:unset;
+		background:unset;
+	}
+
+
+	#ammoHolder, #bottomLeftPlayerRight {
 		background-color:var(--70o-primary-color);
 		border-radius: var(--border-radius);
 		border: solid var(--border-thickness) var(--70o-border-color);
-		position:fixed;
-		bottom:var(--ingame-health-ammo-padding);
-		height:60px;
-		margin-bottom:unset;
-		padding:8px;
 		box-shadow: var(--ingame-box-shadow);
+		height: 70px!important;
+		padding:7px!important;
 	}
 
+#ammoHolder > .greyInner {
+	background:unset;
+	padding:0;
+	height:auto;
+	margin:0;
+}
+
+	/* AMMO/HP VALUES */
 		#ammoMax, #maxHP {
 			font-size:40px;
 			word-spacing:-14px;
 			color:rgb(255 255 255 / 50%)
 		}
 
-		#healthValue, #ammoVal {
+		#ammoVal { margin-right: -10px }
+
+		#bottomLeftHealth { margin-left:5px;}
+
+		#bottomLeftHealth, #ammoVal {
 			text-rendering: var(--text-optimization);
 			font-size: 56px;
-			margin-top:-10px;
-			margin-right:-16px;
+			margin-top:-6px;
 		}
 
 
-		#ammoDisplay {
+
+	/* AMMO DISPLAY */
+		#ammoHolder {
 			left:calc(50% + 290px);
 			padding-right:4px;
 		}
 
+	/* HEALTH DISPLAY */
 
-		#healthValueHolder {
+		#bottomLeftPlayerRight {
 			right:calc(50% + 250px);
+			padding:10px;
+			width:auto;
+			display:flex;
+			flex-direction:row-reverse;
 		}
 		#maxHP {
 			margin-left:-28px;
 		}
-		#challIcon {
-			margin-left:20px;
+		#bottomLeftChallIcon, #ammoIcon {
+			margin-left:10px;
 			width:45px;
 			height:45px;
 		}
-		#healthBar {
-			display:none
-		}
 
 
 
 
-	#timerDisplay { 
+	#timerHolder { /* TIMER DISPLAY */
 		bottom:				unset;
 		top: 				var(--ingame-timer-padding);
 		text-rendering: 	var(--text-optimization);
@@ -1232,9 +1253,12 @@
 		font-size:65px;
 	}
 
+	/* leaderboard visuals */
 
-
-	#leaderDisplay, .countIcon { 
+	#leaderContainer {
+		background-color:unset;
+	}
+	#leaderboardHolder, div.topRightCounters .statIcon { /* leaderboard and stat counts */
 		background-color:	var(--70o-primary-color);
 		border-radius: 		var(--border-radius);
 		border: 			solid var(--border-thickness) var(--70o-border-color);
@@ -1245,11 +1269,18 @@
 	  text-shadow: 0 -1px 3px black, 0 -2px 5px black!important;
 	}
 
-
+	/* Leaderboard stats */
 	#killsVal, #deathsVal, #streakVal, #kdCount, #scoreCount {
-		font-size:35px;
+		font-size:30px;
 		text-rendering: var(--text-optimization);
 	}
+
+	
+	
+	div.topRightCounters .greyInner {
+		background-color:unset;
+	}
+
 	#killsIcon,#deathsIcon,#streakIcon,#kdIcon,#scoreCount .material-icons,.endAHolder, #hudClassIcon, #timerIcon, #customizeButton .material-icons {
 		display:none!important;
 	}
@@ -1265,39 +1296,44 @@
 		content:"S ";
 		color:var(--streak-count-clr);
 	}
-	#kdCount:before {
+	#kdVal:before {
 		content:"KD ";
 		color:var(--kd-count-clr);
 	}
-	#scoreCount:before {
+	#myScoreVal:before {
 		content:"Sc. ";
 		color:var(--score-count-clr);
 	}
 
-
-		.endCard { 
+	/* MATCH END LEADERBOARD */
+		.endCard { /*the end card itself*/
 			background-color:var(--70o-primary-color);
 			border: solid var(--border-thickness) var(--70o-border-sec-color);
 			border-radius: var(--border-radius)
 		}
-		#endTable { 
+		#endTable { /*list containing players and their stats*/
 			background-color:rgb(0 0 0 / 50%);
 			border-radius: max(0, calc(var(--border-radius) - 10px));
 		}
 
-
-			#endTable > tbody > tr:nth-child(3) > td:first-child { 
+		/* PLACE NUMBER COLORING */
+			#endTable > tbody > tr:nth-child(3) > td:first-child { /* TOP 1 */
 				color:rgb(255, 234, 119)!important;
 			}
-			#endTable > tbody > tr:nth-child(4) > td:first-child { 
+			#endTable > tbody > tr:nth-child(4) > td:first-child { /* TOP 2 */
 				color:rgb(230, 230, 230)!important;
 			}
-			#endTable > tbody > tr:nth-child(5) > td:first-child { 
+			#endTable > tbody > tr:nth-child(5) > td:first-child { /* TOP 3 */
 				color:rgb(186, 125, 78)!important;
 			}
-			#endTable > tbody > tr > td:first-child { 
+			#endTable > tbody > tr > td:first-child { /* the rest */
 				color:rgb(126, 126, 126)!important;
 			}
+
+
+#bottomLeftPlayerLeft, #bottomLeftPlayerMid { /* get rid of the clutter at the bottom left holder */
+	display:none;
+}
 
 /* FONTS */
 
