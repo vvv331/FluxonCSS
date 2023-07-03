@@ -68,7 +68,6 @@
     
 }
 
-
 * {
     font-family: 'Roboto Mono'
 }
@@ -80,6 +79,14 @@
 		}
 
 	/* CHAT */
+
+		#chatInputHolder > div.greyInlineInner {
+			background-color:unset;
+		}
+
+		#chatInputHolder {
+			width:450px;
+		}
 
 		#chatList {
 			padding-bottom:5px;
@@ -1198,6 +1205,8 @@
 
 /*------------IN-GAME UI------------*/
 
+/* way to go krunker. had the audacity to break the entirety of ingame css */
+
 	body > canvas[style^="display: block; width:"] {
 		image-rendering:var(--ingame-optimizations);
 	}
@@ -1213,34 +1222,39 @@
 	}
 
 	/* WEAPON DISPLAY */
-		#weapDisplay { /*Weapon display*/
+		#weapHolder { /*Weapon display*/
 			position:fixed;
 			display:flex!important;
 			flex-direction:row;
 			bottom:var(--ingame-weapon-display-padding);
 			right:50%;
 			transform:translateX(50%);
-
-
-		}
-		.weapItem {
-			display:flex!important;
-		}
-		.weapKey {
-			position:absolute;
 		}
 
-	#ammoDisplay, #healthValueHolder {
+	#ammoHolder, #bottomLeftPlayerRight {
+		position:fixed;
+		bottom:var(--ingame-health-ammo-padding);
+		margin:unset;
+		padding:unset;
+		background:unset;
+	}
+
+
+	#ammoHolder, #bottomLeftPlayerRight {
 		background-color:var(--70o-primary-color);
 		border-radius: var(--border-radius);
 		border: solid var(--border-thickness) var(--70o-border-color);
-		position:fixed;
-		bottom:var(--ingame-health-ammo-padding);
-		height:60px;
-		margin-bottom:unset;
-		padding:8px;
 		box-shadow: var(--ingame-box-shadow);
+		height: 70px!important;
+		padding:7px!important;
 	}
+
+#ammoHolder > .greyInner {
+	background:unset;
+	padding:0;
+	height:auto;
+	margin:0;
+}
 
 	/* AMMO/HP VALUES */
 		#ammoMax, #maxHP {
@@ -1249,39 +1263,46 @@
 			color:rgb(255 255 255 / 50%)
 		}
 
-		#healthValue, #ammoVal {
+		#ammoVal { margin-right: -10px }
+
+		#bottomLeftHealth { margin-left:5px;}
+
+		#bottomLeftHealth, #ammoVal {
 			text-rendering: var(--text-optimization);
 			font-size: 56px;
-			margin-top:-10px;
-			margin-right:-16px;
+			margin-top:-6px;
 		}
 
+
+
 	/* AMMO DISPLAY */
-		#ammoDisplay {
+		#ammoHolder {
 			left:calc(50% + 290px);
 			padding-right:4px;
 		}
 
 	/* HEALTH DISPLAY */
-		#healthValueHolder {
+
+		#bottomLeftPlayerRight {
 			right:calc(50% + 250px);
+			padding:10px;
+			width:auto;
+			display:flex;
+			flex-direction:row-reverse;
 		}
 		#maxHP {
 			margin-left:-28px;
 		}
-		#challIcon {
-			margin-left:20px;
+		#bottomLeftChallIcon, #ammoIcon {
+			margin-left:10px;
 			width:45px;
 			height:45px;
 		}
-		#healthBar {
-			display:none
-		}
 
 
 
 
-	#timerDisplay { /* TIMER DISPLAY */
+	#timerHolder { /* TIMER DISPLAY */
 		bottom:				unset;
 		top: 				var(--ingame-timer-padding);
 		text-rendering: 	var(--text-optimization);
@@ -1303,7 +1324,10 @@
 
 	/* leaderboard visuals */
 
-	#leaderDisplay, .countIcon { /* leaderboard and stat counts */
+	#leaderContainer {
+		background-color:unset;
+	}
+	#leaderboardHolder, div.topRightCounters .statIcon { /* leaderboard and stat counts */
 		background-color:	var(--70o-primary-color);
 		border-radius: 		var(--border-radius);
 		border: 			solid var(--border-thickness) var(--70o-border-color);
@@ -1316,9 +1340,16 @@
 
 	/* Leaderboard stats */
 	#killsVal, #deathsVal, #streakVal, #kdCount, #scoreCount {
-		font-size:35px;
+		font-size:30px;
 		text-rendering: var(--text-optimization);
 	}
+
+	
+	
+	div.topRightCounters .greyInner {
+		background-color:unset;
+	}
+
 	#killsIcon,#deathsIcon,#streakIcon,#kdIcon,#scoreCount .material-icons,.endAHolder, #hudClassIcon, #timerIcon, #customizeButton .material-icons {
 		display:none!important;
 	}
@@ -1334,11 +1365,11 @@
 		content:"S ";
 		color:var(--streak-count-clr);
 	}
-	#kdCount:before {
+	#kdVal:before {
 		content:"KD ";
 		color:var(--kd-count-clr);
 	}
-	#scoreCount:before {
+	#myScoreVal:before {
 		content:"Sc. ";
 		color:var(--score-count-clr);
 	}
@@ -1367,6 +1398,11 @@
 			#endTable > tbody > tr > td:first-child { /* the rest */
 				color:rgb(126, 126, 126)!important;
 			}
+
+
+#bottomLeftPlayerLeft, #bottomLeftPlayerMid { /* get rid of the clutter at the bottom left holder */
+	display:none;
+}
 
 /* FONTS */
 
