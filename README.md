@@ -1,4 +1,4 @@
-## UI Mess has been fixed. You can now use this CSS again.
+## DISCONTINUED DUE TO STATE OF KRUNKER
 # Krunker Influx CSS
 > A css built specifically for simplicity, style and clutter removal.
 > 
